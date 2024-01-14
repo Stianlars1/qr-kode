@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+:root {
+    --background: #ffffff;
+    --white: #ffffff;
+    --black: #000000;
+    --green-success: #28a745;
+    --text: rgb(23, 43, 77);
+    --logo-top-left: #bf29e7;
+    --logo-bottom-right: #4d0eaf;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #121212;
+        --text: rgb(182, 194, 207);
+    }
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', system-ui, sans-serif;
+    color: var(--text);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.app {
+    width: 100%;
+    max-width: 1080px;
+    min-height: 100vh;
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 72px;
+}
+.app .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+} /*# sourceMappingURL=app.css.map */

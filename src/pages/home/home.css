@@ -1,0 +1,22 @@
+main {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 1.5rem;
+}
+main h1 {
+    color: #121212;
+}
+
+@media (prefers-color-scheme: dark) {
+    main h1 {
+        color: var(--white);
+    }
+}
+@media (max-width: 768px) {
+    main {
+        margin-top: 48px;
+    }
+} /*# sourceMappingURL=home.css.map */

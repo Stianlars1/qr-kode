@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+:root {
+    --background: #ffffff;
+    --white: #ffffff;
+    --black: #000000;
+    --green-success: #28a745;
+
+    --text: rgb(23, 43, 77);
+
+    --logo-top-left: #bf29e7;
+    --logo-bottom-right: #4d0eaf;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #121212;
+        --text: rgb(182, 194, 207);
+    }
+}

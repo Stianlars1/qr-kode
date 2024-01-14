@@ -1,43 +1,65 @@
 {
-  "name": "qr-kode",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.70",
-    "@types/react": "^18.2.47",
-    "@types/react-dom": "^18.2.18",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+    "name": "qr-kode",
+    "version": "0.1.0",
+    "homepage": "https://www.qr-kode.app",
+    "author": "Stian Larsen @ Norway",
+    "keywords": [
+        "qr-code",
+        "qr-kode",
+        "qr kode",
+        "qr kode generator",
+        "generer qr kode gratis",
+        "generer qr",
+        "qr",
+        "code"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+    "private": true,
+    "dependencies": {
+        "@tanstack/react-query": "^5.17.10",
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "@types/jest": "^27.5.2",
+        "@types/node": "^16.18.70",
+        "@types/react": "^18.2.47",
+        "@types/react-dom": "^18.2.18",
+        "cross-env": "^7.0.3",
+        "firebase": "^10.7.1",
+        "jszip": "^3.10.1",
+        "prettier": "^3.2.2",
+        "qrcode.react": "^3.1.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-hot-toast": "^2.4.1",
+        "react-icons": "^5.0.1",
+        "react-scripts": "5.0.1",
+        "save": "^2.9.0",
+        "typescript": "^4.9.5",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "cross-env NODE_ENV=production GENERATE_SOURCEMAP=false react-scripts build",
+        "prettier": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,scss,md}\"",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }
