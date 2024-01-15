@@ -1,9 +1,10 @@
 // Insights.scss
 .insights-container {
-    margin-top: 32px;
+    margin-top: 64px;
     white-space: nowrap;
     position: relative;
     display: flex;
+    width: 320px;
 
     flex-direction: column;
     gap: 1rem;
@@ -33,6 +34,8 @@
 
     span {
         margin-right: 50px;
+        font-size: 1rem;
+        line-height: 24px;
     }
 }
 

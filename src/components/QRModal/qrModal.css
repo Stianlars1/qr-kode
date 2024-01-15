@@ -15,8 +15,25 @@
 .modal-overlay .modal-content {
     background-color: var(--white);
     padding: 20px;
+    border-radius: 8px;
+    padding-bottom: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+}
+.modal-overlay .modal-content .info {
+    margin-top: -1rem;
+    font-size: 12px;
+    text-wrap: balance;
+    color: var(--black);
+}
+
+@media (prefers-color-scheme = dark) {
+    .modal-overlay .modal-content {
+        background-color: #292929;
+    }
+    .modal-overlay .modal-content .info {
+        color: var(--white);
+    }
 } /*# sourceMappingURL=qrModal.css.map */
